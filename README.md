@@ -34,6 +34,9 @@ Explore the RabbitMQ website.
 1. Run listening_worker.py
 
 Will it terminate on its own? How do you know? 
+```diff
++ The program explicitly tells us that it will not terminate unless you use ctrl+c
+```
 
 ## Ready for Work
 
@@ -48,6 +51,9 @@ Add multiple tasks (e.g. First message, Second message, etc.)
 How are tasks distributed? 
 Monitor the windows with at least two workers. 
 Which worker gets which tasks?
+```diff
++ Looks like the tasks are assigned in a loop to each worker. Worker 1 gets task 1, worker 2 gets task 2, worker 1 gets task 3, etc.
+```
 
 
 ## Reference
