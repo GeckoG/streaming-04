@@ -80,5 +80,5 @@ if __name__ == "__main__":
         message = row
         message = str(message).encode()
         # send the message to the queue
-        send_message("localhost","task_queue2",message)
+        send_message("localhost","task_queue3",message)
         time.sleep(3)
